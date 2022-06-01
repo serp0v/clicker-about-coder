@@ -41,7 +41,6 @@ mainbar.onclick = function() {
 
 
 
-
 // pre Text Closer(i'm a guest)
 
 
@@ -64,36 +63,3 @@ closeGuest.onclick = function preMenuCloser() {
     contentWrapper.classList.add('contentWrapAnimation');
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -174,9 +174,9 @@ a:hover {
     }
 }
 .contentWrapAnimation {
-    animation: preClick 1s linear ;
+    /* animation: preClick 1s linear ; */
     /* background-color: #191551; */
-    background: linear-gradient(#191551, #87ceeb);
+    /* background: linear-gradient(#191551, #87ceeb); */
     border: 1px solid black;
 }
 @keyframes preClick {
@@ -206,13 +206,54 @@ a:hover {
     /* background-color: rgb(29, 246, 1); */
     border-bottom: 1px solid black;
 }
-
+    .value__item__cont {
+        /* background-color: rgb(255, 0, 0); */
+        /* border: 1px solid #000; */
+        height: 46px;
+        display: flex;
+        float: right;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+        .value__item {
+            width: 104px;
+            height: 22px;
+            display: flex;
+            float: right;
+            /* margin-right: 5px; */
+            background-color: rgb(0, 0, 0);
+            margin-top: 13px;
+            margin-bottom: 13px;
+            margin-left: 10px;
+        }
+            .value__icon {
+                height: 22px;
+                background-color: rgb(116, 116, 116);
+                width: 22px;
+            }
+            .plus__icon {
+                height: 22px;
+                background-color: rgb(106, 54, 54);
+                width: 22px;
+                margin-left: 60px;
+            }
+        .value__item__rules {
+            height: 30px;
+            width: 30px;
+            display: flex;
+            float: right;
+            background-color: rgb(0, 0, 0);
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 10px;
+        }
 .gameplay {
     /* background-color: rgb(0, 139, 2); */
     height: 492px;
     border-bottom: 1px solid black;
 }
-
 .metrics {
     height: 150px;
     /* background-color: rgb(0, 52, 14); */
