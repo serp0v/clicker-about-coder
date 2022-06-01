@@ -76,37 +76,40 @@ a {
     width: 70px; /*160 to double in a row*/
     height: 60%;
     position: absolute;
-    bottom:15%;
+    bottom:18.6%;
     margin-right: 27px;
-    /* top: 33.2%; */
+}
+.shop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px; /*160 to double in a row*/
+    height: 10%;
+    position: absolute;
+    bottom:0%;
+    margin-right: 27px;
+    margin-bottom: 35px;
 }
 .accordionClose {
-    border: 1px solid rgb(0, 0, 0);
-    flex: 1 1 auto;
-    height: 70px;
-    width: 70px;
-    border-radius: 18px;
-    background-color: #fff;
     display: none;
 }
 .accordionOpen {
-    border: 1px solid rgb(255, 255, 255);
     flex: 1 1 auto;
     height: 70px;
     width: 70px;
     border-radius: 18px;
-    background-color: rgb(0, 0, 0);
     display: block;
     margin-bottom: 9px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fff;
 }
 #mainbar {
     border: 1px solid rgb(0, 0, 0);
+    background-color: #fff;
     flex: 1 1 auto;
     height: 70px;
     width: 70px;
     border-radius: 18px;
     margin-bottom: 9px;
-    background-color: rgb(0, 0, 0);
     position: absolute;
     display: block;
 }
@@ -116,10 +119,11 @@ nav {
 .mainbarOpen {
     animation: mainbarisOpen 0.1s linear;
     top:-20%;
+    overflow: hidden;
 }
 @keyframes mainbarisOpen {
     0%{
-        top: 28%;
+        top: 34.5%;
     }
     100% {
         top: -20%;
@@ -127,14 +131,14 @@ nav {
 }
 .mainbarClose {
     animation: mainbarisClose 0.12s linear;
-    top:28%;
+    top:34.5%;
 }
 @keyframes mainbarisClose {
     0%{
         top: -20%;
     }
     100% {
-        top: 28%;
+        top: 34.5%;
     }
 }
 .menu {
@@ -191,9 +195,9 @@ a:hover {
 /* gameplay */
 /* metrics */
 .contentcont {
-    width: 950px;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
+    max-width: 950px;
+    /* border-left: 1px solid #000;
+    border-right: 1px solid #000; */
     margin: 0 auto;
 }
 
@@ -203,8 +207,9 @@ a:hover {
 
 .values {
     height: 60px;
+    border-radius: 18px;
+    max-width: 100%;
     /* background-color: rgb(29, 246, 1); */
-    border-bottom: 1px solid black;
 }
     .value__item__cont {
         /* background-color: rgb(255, 0, 0); */
@@ -251,10 +256,46 @@ a:hover {
         }
 .gameplay {
     /* background-color: rgb(0, 139, 2); */
-    height: 492px;
-    border-bottom: 1px solid black;
+    height: 502px;
+    border: 1px solid black;
+    margin-bottom: 15px;
 }
 .metrics {
-    height: 150px;
+    height: 110px;
+    border: 1px solid #000;
+    max-width: 100%;
+    margin: 0 auto;
     /* background-color: rgb(0, 52, 14); */
 }
+/* ////////////////////////////////////// */
+.metrics > div{
+    height: 110px;
+    display: flex;
+    float: right;
+}
+.bonusChest {
+    width: 170px;
+    border-left: 1px solid #000;
+}
+.metric__body {
+    width: 170px;
+    border-left: 1px solid #000;
+}
+.metric__title {
+    width: 170px;
+    border-left: 1px solid #000;
+    justify-content: center;
+}
+.place {
+    width: 260px;
+    border-left: 1px solid #000;
+}
+.place__title {
+    justify-content: center;
+    width: 170px;
+}
+.title__ {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* ////////////////////////////////////// */
