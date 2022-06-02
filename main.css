@@ -1,10 +1,10 @@
 body {
     background-color:#eeeff0;
     user-select:none;
+    text-align: center;
+    justify-content: center;
 }
 .mainwrapper {
-    /* max-width:1920px;
-    max-height: 1080px; */
     margin: 0 auto;
     padding-top: 3.5vh;
     padding-bottom: 4vh;
@@ -19,7 +19,33 @@ body {
     font-family: 'Koulen';
     font-size: 32px;
 }
-/* header */
+/*/////////////////////////////////////////////////////////////////////////////////////////// pre */
+.pre {
+    text-align: center;
+    position: absolute;
+    top:37%;
+    right: 44%;
+}
+.welcome {
+    color: black;
+    font-weight: bold;
+}
+.preOpen {
+    display: block;
+}
+/* .preClose {
+    display: none;
+} */
+.preCloseAnimation {
+    animation: preHider 1s linear ;
+}
+.contentWrapAnimation {
+    /* animation: preClick 5s linear ; */
+    /* background-color: #191551; */
+    /* background: linear-gradient(#191551, #87ceeb); */
+    border: 1px solid black;
+}
+/*////////////////////////////////////////////////////////////////////////////////////// header */
 .header-wrap {
     max-width: 1200px;
     height: 42px;
@@ -73,7 +99,7 @@ a {
 .navbar-grid {
     display: flex;
     flex-wrap: wrap;
-    width: 70px; /*160 to double in a row*/
+    width: 70px;
     height: 60%;
     position: absolute;
     bottom:18.6%;
@@ -82,7 +108,7 @@ a {
 .shop-grid {
     display: flex;
     flex-wrap: wrap;
-    width: 70px; /*160 to double in a row*/
+    width: 70px;
     height: 10%;
     position: absolute;
     bottom:0%;
@@ -93,7 +119,7 @@ a {
     display: none;
 }
 .accordionOpen {
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     height: 70px;
     width: 70px;
     border-radius: 18px;
@@ -103,9 +129,9 @@ a {
     background-color: #fff;
 }
 #mainbar {
+    /* flex: 1 1 auto; */
     border: 1px solid rgb(0, 0, 0);
     background-color: #fff;
-    flex: 1 1 auto;
     height: 70px;
     width: 70px;
     border-radius: 18px;
@@ -117,30 +143,15 @@ nav {
     margin-left: 1px;
 }
 .mainbarOpen {
-    animation: mainbarisOpen 0.1s linear;
+    /* animation: mainbarisOpen 0.1s linear; */
     top:-20%;
     overflow: hidden;
 }
-@keyframes mainbarisOpen {
-    0%{
-        top: 34.5%;
-    }
-    100% {
-        top: -20%;
-    }
-}
 .mainbarClose {
-    animation: mainbarisClose 0.12s linear;
+    /* animation: mainbarisClose 0.12s linear; */
     top:34.5%;
 }
-@keyframes mainbarisClose {
-    0%{
-        top: -20%;
-    }
-    100% {
-        top: 34.5%;
-    }
-}
+
 .menu {
     display: block;
     margin-left: -2px;
@@ -149,125 +160,84 @@ nav {
 a:hover {
     filter: brightness(130%);
 }
-.pre {
-    text-align: center;
-    position: absolute;
-    top:37%;
-    right: 44%;
-    /* border: 1px solid black; */
-}
-.welcome {
-    color: black;
-    font-weight: bold;
-}
-.preOpen {
-    display: block;
-}
-/* .preClose {
-    display: none;
-} */
-.preCloseAnimation {
-    animation: preHider 1s linear ;
-}
-@keyframes preHider {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.contentWrapAnimation {
-    /* animation: preClick 1s linear ; */
-    /* background-color: #191551; */
-    /* background: linear-gradient(#191551, #87ceeb); */
-    border: 1px solid black;
-}
-@keyframes preClick {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-/* values */
-/* gameplay */
-/* metrics */
 .contentcont {
     max-width: 950px;
-    /* border-left: 1px solid #000;
-    border-right: 1px solid #000; */
     margin: 0 auto;
 }
-
 .contentcont > div {
     background-color: #fff;
 }
-
+/*////////////////////////////////////////////////////////////////////////////////////values*/
 .values {
     height: 60px;
     border-radius: 18px;
     max-width: 100%;
-    /* background-color: rgb(29, 246, 1); */
 }
-    .value__item__cont {
-        /* background-color: rgb(255, 0, 0); */
-        /* border: 1px solid #000; */
-        height: 46px;
-        display: flex;
-        float: right;
-        margin-top: 7px;
-        margin-bottom: 7px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-        .value__item {
-            width: 104px;
-            height: 22px;
-            display: flex;
-            float: right;
-            /* margin-right: 5px; */
-            background-color: rgb(0, 0, 0);
-            margin-top: 13px;
-            margin-bottom: 13px;
-            margin-left: 10px;
-        }
-            .value__icon {
-                height: 22px;
-                background-color: rgb(116, 116, 116);
-                width: 22px;
-            }
-            .plus__icon {
-                height: 22px;
-                background-color: rgb(106, 54, 54);
-                width: 22px;
-                margin-left: 60px;
-            }
-        .value__item__rules {
-            height: 30px;
-            width: 30px;
-            display: flex;
-            float: right;
-            background-color: rgb(0, 0, 0);
-            margin-top: 8px;
-            margin-bottom: 8px;
-            margin-left: 10px;
-        }
+.value__item__cont {
+    height: 46px;
+    display: flex;
+    float: right;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.value__item {
+    width: 104px;
+    height: 22px;
+    display: flex;
+    float: right;
+    background-color: rgb(0, 0, 0);
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-left: 10px;
+}
+.value__icon {
+    height: 22px;
+    background-color: rgb(116, 116, 116);
+    width: 22px;
+}
+.plus__icon {
+    height: 22px;
+    background-color: rgb(106, 54, 54);
+    width: 22px;
+    margin-left: 60px;
+}
+.value__item__rules {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    float: right;
+    background-color: rgb(0, 0, 0);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+.avatar {
+
+}
+.avatarArrow {
+    float: right;
+    height: 16px;
+    width: 16px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*//////////////////////////////////////////////////////////////////////////////////gameplay*/
 .gameplay {
-    /* background-color: rgb(0, 139, 2); */
     height: 502px;
     border: 1px solid black;
     margin-bottom: 15px;
 }
+/*///////////////////////////////////////////////////////////////////////////////////metrics*/
 .metrics {
     height: 110px;
     border: 1px solid #000;
     max-width: 100%;
     margin: 0 auto;
-    /* background-color: rgb(0, 52, 14); */
 }
-/* ////////////////////////////////////// */
 .metrics > div{
     height: 110px;
     display: flex;
@@ -277,25 +247,100 @@ a:hover {
     width: 170px;
     border-left: 1px solid #000;
 }
+.bonusChest__item {
+    height: 70px;
+    width: 90px;
+    border-radius: 18px;
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fff;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    justify-content: center;
+}
 .metric__body {
     width: 170px;
-    border-left: 1px solid #000;
+    /* border-left: 1px solid #000; */
+}
+.metric__cont {
+    padding-top: 19px;
+    padding-bottom: 13px;
+}
+.metric__item {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    float: left;
+    background-color: rgb(75, 75, 75);
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    justify-content: end;
+    padding-right: 5px;
+
 }
 .metric__title {
     width: 170px;
     border-left: 1px solid #000;
     justify-content: center;
 }
-.place {
-    width: 260px;
-    border-left: 1px solid #000;
-}
 .place__title {
     justify-content: center;
     width: 170px;
+}
+.powerNplace {
+    border: 1px solid black;
+}
+.place {
+    width: 260px;
+    /* border-left: 1px solid #000; */
+}
+.place__item {
+    height: 90px;
+    margin-top: 10px;
+    width: 90px;
+    border: 1px solid #000;
+    display: flex;
+    float: right;
+    margin-left: 10px;
 }
 .title__ {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-/* ////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////@keyframes*/
+@keyframes preClick {
+    0% {
+        opacity: 0;
+    }/* .contentWrapAnimation */
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes preHider {
+    0% {
+        opacity: 1;
+     }/* .preCloseAnimation */
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes mainbarisOpen {
+    0%{
+        top: 34.5%;
+    }/* .mainbarOpen */
+    100% {
+        top: -20%;
+    }
+}
+@keyframes mainbarisClose {
+    0%{
+        top: -20%;
+    }/* .mainbarClose */
+    100% {
+        top: 34.5%;
+    }
+}
