@@ -36,4 +36,22 @@ closeGuest.onclick = function preMenuCloser() {
     contentWrapper.classList.add('contentWrapAnimation');
 
 }
-// 
+// shopZoneSwithcer
+
+const shopButton = document.getElementById('shopButton');
+const shopMenu = document.getElementById('shopMenu');
+
+shopButton.onclick = function shopModeSwitcher() {
+    shopMenu.classList.toggle('shopClose');
+    shopMenu.classList.toggle('shopOpen');
+}
+
+// clickZoneSwitcher
+
+const cZo = document.getElementById('clickZoneController');
+const clickZone = document.getElementById('clickZone');
+
+cZo.onclick = function shopModeSwitcher() {
+    clickZone.classList.toggle('clickZone');
+    clickZone.classList.toggle('clickZoneOff');
+}
