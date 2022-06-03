@@ -205,11 +205,19 @@ a:hover {
     background-color: rgb(116, 116, 116);
     width: 22px;
 }
+.coin {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    text-align: right;
+}
 .plus__icon {
     height: 22px;
     background-color: rgb(106, 54, 54);
     width: 22px;
-    margin-left: 60px;
+    position: relative;
+    display: flex;
+    left: 50px;
 }
 .avatar {
     height: 30px;
