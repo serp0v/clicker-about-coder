@@ -39,6 +39,7 @@
                 <div class="margincont">
                     <div class="contentcont">
                         <div class="preblock">
+
                             <div id="pre" class="pre preOpen">
                                 <a class="welcome">Welcome!</a>
                                 <br>
@@ -48,6 +49,7 @@
                                 <a id="amaGuest" href="#">i'm a guest</a>
                             </div>
                         </div>
+
                         <div class="values">
                             <div class="value__item__cont">
                                 <div class="value__item">
@@ -56,9 +58,8 @@
                                     <div class="plus__icon"></div>
                                 </div>
                                 <div class="value__item">
-                                    <p id="coin" class="coin">0</p>
                                     <div class="value__icon"></div>
-                                    
+                                    <p id="goldCell" class="coin"></p>
                                     <div class="plus__icon"></div>
                                 </div>
                                 <div class="avatar"></div>
@@ -66,19 +67,31 @@
                                 <div class="avatarArrow"></div>
                             </div>
                         </div>
+
                         <div class="gameplay">
                             <div id="clickZone" class="clickZoneOff"></div>
-                            <div id="shopMenu" class="shopClose">
-                                <div class="boost__item"></div>
-                                <div class="boost__item"></div>
+                            <div id="shopMenu" class="shopOpen">
+                                <ul>
+                                    <li id="firstShopItem" class="boost__item">firstShopItem</li>
+                                    <li class="boost__item">123</li>
+                                    <li class="boost__item">123</li>
+                                    <li class="boost__item">123</li>
+                                    <li class="boost__item">123</li>
+                                    <li class="boost__item">123</li>
+                                    <li class="boost__item">123</li>
+                                    <li class="boost__item">123</li>
+                                    <li class="boost__item">123</li>
+                                    <li class="boost__item">123</li>
+                                </ul>
                             </div>
                         </div>
+                        
                         <div class="metrics">
                             <div class="bonusChest"><div class="bonusChest__item">chest</div></div>
                             <div class="metric__body">
                                 <div class="metric__cont">
-                                    <div class="metric__item">0/min</div>
-                                    <div class="metric__item">0/min</div>
+                                    <div id="coinCountCell" class="metric__item"></div>
+                                    <div id="gemmetric" class="metric__item"></div>
                                 </div>
                             </div>
                             <div class="metric__title">
@@ -99,6 +112,7 @@
                             </div>
                         </div>
                     </div>
+
                     <nav>
                         <div id="accordion" class="navbar-grid">
                             <button class="mainbarClose" id="mainbar"><a id="menushka" class="menu" href="#">menu</a></button>

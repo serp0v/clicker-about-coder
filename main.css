@@ -263,6 +263,7 @@ a:hover {
     background-color: rgb(90, 61, 61);
     display: flex;
     float: right;
+    overflow: hidden;
 }
 .shopClose {
     display: none;
@@ -270,8 +271,30 @@ a:hover {
 .boost__item {
     height: 50px;
     width: 170px;
-    border: 1px solid #000;
-    flex-direction: row;
+    background-color: rgb(176, 52, 52);
+}
+.boost__item:hover {
+    filter: brightness(150%);
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+    margin-top: 0;
+    display: flex;
+    /* margin-right: 0; */
+    justify-content: end;
+    align-items: start;
+    position: relative;
+    top: -32px;
+   }
+ul {
+margin-left: 0; /* Отступ слева в браузере IE и Opera */
+padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+padding-bottom: 0;
+height: 0;
+width: 0;
+}
+li ~ li {
+    border-top: 1px solid #000;
 }
 /*///////////////////////////////////////////////////////////////////////////////////metrics*/
 .metrics {
@@ -325,7 +348,6 @@ a:hover {
     font-size: 20px;
     justify-content: end;
     padding-right: 5px;
-
 }
 .metric__title {
     width: 170px;
