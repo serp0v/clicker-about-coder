@@ -67,6 +67,9 @@ goldCell.innerHTML = coinCount;
 clickZone.onclick = function clickZoneClick() {
     coinCount++;
     goldCell.innerHTML = coinCount;
+    chestClickMetricStart = chestClickMetricStart - 1;
+    chestClickMetric.innerHTML = chestClickMetricStart + " до сундука";
+    let chestMetricChecker = (chestClickMetricStart == 0) ? chest.style.backgroundColor = "#fff" : console.log("рано!");
 }
 
 // логика увеличения счетчика добычи в секунду
@@ -93,15 +96,33 @@ coinCountCell.innerHTML = coinCountMetric + "/sec";
 firstShopItem.onclick = function firstShopItemClick() {
     coinCountMetric = coinCountMetric + 5;
     coinCountCell.innerHTML = coinCountMetric + "/sec";
-    // логика отмены транзакции при недостаточном колве валюты
-    let valueChecker = (coinCount >= 10) ? console.log("passed!") : alert('мало деняк');
-    // логика отнимания валюты при нажатии на покупку
-    coinCount = coinCount - 10;
+    
+    let valueChecker = (coinCount >= firstShopItemCost) ? console.log("passed!") : alert('мало деняк'); // логика отмены транзакции при недостаточном колве валюты
+
+    coinCount = coinCount - firstShopItemCost;     // логика отнимания валюты при нажатии на покупку
     goldCell.innerHTML = coinCount;
+    // логика увеличения цены в магазине (каждый раз увеличение в 1.07-1.15 раза и округление)
 }
 
 // логика добавления валюты каждую секунду в размере счетчика добычи в секунду
-// логика увеличения цены в магазине (каждый раз увеличение в 1.07-1.15 раза и округление)
+
+let goldImpact = setInterval(function goldImpacter(){
+    coinCount = coinCountMetric + coinCount;
+    goldCell.innerHTML = coinCount;
+},1000);
 
 // сундук - каждое опред кол-во кликов доступен прикол из сундука
+
+// метрик кликов до сундука
+const chest = document.getElementById('chest');
+
+const chestClickMetric = document.getElementById('chestClickMetric');
+
+let chestClickMetricStart = 5;
+
+chestClickMetric.innerHTML = chestClickMetricStart + " до сундука";
+
 // открывание менюшки дропа при "раннем клике"(досрочном) на сундук
+// chest.onclick = function chestIsOpen() {
+
+// }

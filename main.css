@@ -52,7 +52,7 @@ body {
     border-radius: 11px;
     margin: 0 auto;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
 }
 .headercont {
     max-width: 1138px;
@@ -90,7 +90,7 @@ a {
     height: 704px;
     border-radius: 18px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
 }
 .margincont {
     max-width: 1146px;
@@ -200,25 +200,25 @@ a:hover {
     margin-bottom: 13px;
     margin-left: 10px;
 }
-.value__icon {
+/* .value__icon {
     height: 22px;
     background-color: rgb(116, 116, 116);
     width: 22px;
-}
+} */
 .coin {
     font-size: 18px;
     color: rgb(255, 255, 255);
     display: flex;
     text-align: right;
 }
-.plus__icon {
+/* .plus__icon {
     height: 22px;
     background-color: rgb(106, 54, 54);
     width: 22px;
     position: relative;
     display: flex;
     left: 50px;
-}
+} */
 .avatar {
     height: 30px;
     width: 30px;
@@ -327,6 +327,10 @@ li ~ li {
     margin-right: 40px;
     text-align: center;
     justify-content: center;
+}
+.chestClickMetric {
+    font-size: 18px;
+    display: flex;
 }
 .metric__body {
     width: 170px;
