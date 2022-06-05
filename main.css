@@ -1,19 +1,17 @@
 body {
-    background-color:#eeeff0;
+    background-color:rgb(26, 27, 21);
     user-select:none;
     text-align: center;
     justify-content: center;
 }
 .mainwrapper {
     margin: 0 auto;
-    padding-top: 3.5vh;
     padding-bottom: 4vh;
     overflow: hidden;
 }
 [class$="-wrap"]{
     font-family: 'Koulen';
     font-size: 32px;
-    border: 1px solid black;
 }
 [class$="cont"]{
     font-family: 'Koulen';
@@ -39,25 +37,28 @@ body {
 .preCloseAnimation {
     animation: preHider 1s linear ;
 }
-.contentWrapAnimation {
+/* .contentWrapAnimation { */
     /* animation: preClick 5s linear ; */
     /* background-color: #191551; */
     /* background: linear-gradient(#191551, #87ceeb); */
-    border: 1px solid black;
-}
+    /* border: 1px solid black; */
+/* } */
 /*////////////////////////////////////////////////////////////////////////////////////// header */
+.header-border {
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+}
 .header-wrap {
     max-width: 1200px;
     height: 42px;
     border-radius: 11px;
     margin: 0 auto;
-    margin-bottom: 10px;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(76, 77, 82); */
 }
 .headercont {
     max-width: 1138px;
     padding: 6px 0 5px 0;
-    margin: -1px 28px 0 35px;
+    margin: 0 auto;
     height:42px;
 }
 .icon {
@@ -65,6 +66,7 @@ body {
     height: 30px;
     border-radius: 18px;
     border: 1px solid black;
+    background-color:rgb(26, 27, 21);
     display: flex;
     flex-direction: row;
     margin-left: 6px;
@@ -90,7 +92,7 @@ a {
     height: 704px;
     border-radius: 18px;
     margin: 0 auto;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(76, 77, 82); */
 }
 .margincont {
     max-width: 1146px;
@@ -98,6 +100,7 @@ a {
     position: relative;
     margin: 0 auto;
 }
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .navbar-grid {
     display: flex;
     flex-wrap: wrap;
@@ -106,25 +109,6 @@ a {
     position: absolute;
     bottom:18.6%;
     margin-right: 27px;
-}
-.shop-grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70px;
-    height: 10%;
-    position: absolute;
-    bottom:0%;
-    margin-right: 27px;
-    margin-bottom: 35px;
-}
-.shop__icon {
-    height: 70px;
-    width: 70px;
-    border-radius: 18px;
-    display: block;
-    margin-bottom: 9px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(88, 183, 255);
 }
 .accordionClose {
     display: none;
@@ -150,9 +134,6 @@ a {
     position: absolute;
     display: block;
 }
-nav {
-    margin-left: 1px;
-}
 .mainbarOpen {
     /* animation: mainbarisOpen 0.1s linear; */
     top:-20%;
@@ -162,7 +143,56 @@ nav {
     /* animation: mainbarisClose 0.12s linear; */
     top:34.5%;
 }
+/* ///////////////////////////////////////////////////////////вынести селекторы для шопа и навбара, суперсхожи/////////////////////////////////////////////////// */
+.shop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    right: 0;
+    width: 70px;
+    height: 60%;
+    position: absolute;
+    bottom:18.6%;
+    margin-left: 27px;
+    margin-right: 1px;
+}
+.shopClose {
+    display: none;
+}
+.shopOpen {
+    /* flex: 1 1 auto; */
+    height: 70px;
+    width: 70px;
+    border-radius: 18px;
+    display: block;
+    margin-bottom: 9px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fff;
+}
+#shop {
+    /* flex: 1 1 auto; */
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fff;
+    height: 70px;
+    width: 70px;
+    border-radius: 18px;
+    margin-bottom: 9px;
+    position: absolute;
+    display: block;
+}
+.mainbarShopOpen {
+    /* animation: mainbarisOpen 0.1s linear; */
+    top:-20%;
+    overflow: hidden;
+}
+.mainbarShopClose {
+    /* animation: mainbarisClose 0.12s linear; */
+    top:34.5%;
+}
 
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////.............. */
+nav {
+    margin-left: 1px;
+}
 .menu {
     display: block;
     margin-left: -2px;
@@ -185,10 +215,7 @@ a:hover {
     height: 46px;
     display: flex;
     float: right;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 7px 10px 7px 10px;
 }
 .value__item {
     width: 104px;
@@ -244,6 +271,8 @@ a:hover {
     height: 502px;
     border: 1px solid rgb(0, 0, 0);
     margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 18px;
 }
 .clickZone {
     width: 170px;
@@ -256,7 +285,7 @@ a:hover {
 .clickZoneOff {
     display: none;
 }
-.shopOpen {
+/* .shopOpen {
     width: 170px;
     height: 500px;
     border-left: 1px solid #000;
@@ -264,8 +293,8 @@ a:hover {
     display: flex;
     float: right;
     overflow: hidden;
-}
-.shopClose {
+} */
+/* .shopClose {
     display: none;
 }
 .boost__item {
@@ -277,25 +306,25 @@ a:hover {
     filter: brightness(150%);
 }
 li {
-    list-style-type: none; /* Убираем маркеры */
+    list-style-type: none;
     margin-top: 0;
     display: flex;
-    /* margin-right: 0; */
+    margin-right: 0;
     justify-content: end;
     align-items: start;
     position: relative;
     top: -32px;
    }
 ul {
-    margin-left: 0; /* Отступ слева в браузере IE и Opera */
-    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    margin-left: 0; 
+    padding-left: 0;
     padding-bottom: 0;
     height: 0;
     width: 0;
     }
 li ~ li {
     border-top: 1px solid #000;
-}
+} */
 /*///////////////////////////////////////////////////////////////////////////////////metrics*/
 .metrics {
     height: 110px;
