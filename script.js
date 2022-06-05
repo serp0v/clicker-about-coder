@@ -1,7 +1,7 @@
 ////////////////////////////////////Черкасов Александр//////////////////////////////////////////////////
 /////////////////////////////////////vk:@danilserpov////////////////////////////////////////////////////
 
-//navbar
+//navbar menu
 
 let mainbar = document.getElementById('mainbar');
 
@@ -12,6 +12,19 @@ accoChildren.forEach(accoChildren=>mainbar.addEventListener('click', function(){
 
     accoChildren.classList.toggle('accordionClose');
     accoChildren.classList.toggle('accordionOpen');
+}));
+
+//navbar shop (right)
+
+let shop = document.getElementById('shop');
+
+const shopChildren = document.querySelectorAll('.shopClose');
+shopChildren.forEach(shopChildren=>shop.addEventListener('click', function(){
+    shop.classList.toggle('mainbarShopClose');
+    shop.classList.toggle('mainbarShopOpen');
+
+    shopChildren.classList.toggle('shopClose');
+    shopChildren.classList.toggle('shopOpen');
 }));
 
 // pre Text Closer(i'm a guest)
@@ -33,13 +46,13 @@ closeGuest.onclick = function preMenuCloser() {
 
 // shopZoneSwithcer
 
-const shopButton = document.getElementById('shopButton');
-const shopMenu = document.getElementById('shopMenu');
+// const shopButton = document.getElementById('shopButton');
+// const shopMenu = document.getElementById('shopMenu');
 
-shopButton.onclick = function shopModeSwitcher() {
-    shopMenu.classList.toggle('shopClose');
-    shopMenu.classList.toggle('shopOpen');
-}
+// shopButton.onclick = function shopModeSwitcher() {
+//     shopMenu.classList.toggle('shopClose');
+//     shopMenu.classList.toggle('shopOpen');
+// }
 
 // clickZoneSwitcher
 
