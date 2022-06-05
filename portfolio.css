@@ -1,51 +1,54 @@
-
-[class$="__photo"]{
-    height: 200px;
+/* .browser {
+    height: 32px;
+    max-width: 1019px;
+    margin: 0 auto;
+    border: 1px solid #000;
     display: flex;
-    margin-top: 24px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 24px;
-
+} */
+/* ///////////////////////////////////////////////////////////// */
+.headercont {
+    max-width: 1018px;
+    margin: 0 auto;
 }
-[class$="__title"]{
-    display: flex;
-    float: right;
-
+.content-wrap {
+    height: auto;
+    border-radius: 18px;
 }
+.margincont {
+    max-width: 1173px;
+    height: 1200px;
+}
+/* //////////////////////////////////////////////////////////// */
 .aboutMe {
-    justify-content: center;
+    justify-content: start;
     height: 248px;
     display: flex;
-}
-.cont__photo {
-    max-width: 29%;
     float: left;
-    align-items: center;
-    margin-right: 27px;
-    /* background-color: rgb(29, 185, 125); */
+    margin-left: 27px;
+    width: 827px;
     /* border: 1px solid #000; */
 }
 .item__photo {
     width: 200px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     align-items: center;
     float: left;
     justify-content: center;
+    margin-right: 27px;
 }
 .nameSurname__photo {
-    width: 69%;
-    float: right;
-    border: 1px solid #000;
+    width: 600px;
+    float: left;
+    border: 2px solid #000;
+    display: flex;
 }
 .nameSurname__photo > p{
     margin-left: 27px;
+    display: flex;
+    height: 46px;
+    margin-right: 27px;
 }
-.content-wrap {
-    height: auto;
-}
-/* .margincont {
-} */
+/* /////////////////////////////////////////////////////////// */
 .cherta {
     background-color: rgb(0, 0, 0);
     width: 1146px;
@@ -55,32 +58,59 @@
     margin-top: 24px;
     position: relative;
 }
-.browser {
-    height: 32px;
-    max-width: 1019px;
-    margin: 0 auto;
-    border: 1px solid #000;
+/* ///////////////////////////////////////////////////////////// */
+.right-info {
+    height: 100%;
+    /* border: 1px solid #000; */
     display: flex;
+    width: 263px;
+    float: right;
+    margin-right: 27px;
+    margin-left: 27px;
 }
-.browser > div {
-    width: 20%;
-    /* align-items: center; */
-    justify-content: center;
+.ric {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 263px;
     display: flex;
-    background-color: #fff;
+    border: 2px solid #000;
+    height: 100% - 48px;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.aboutMe__info {
+    justify-content: start;
+    height: 928px;
+    width: 827px;
+    display: flex;
+    float: left;
+    margin-left: 27px;
+    /* border: 2px solid #000; */
+}
+.amic {
+    margin-bottom: 24px;
+    width: 100%;
+    display: flex;
+    border: 2px solid #000;
+    height: 100%;
+}
+/* ////////////////////////////////////////////////////////////////////////////// */
+[class$="__photo"]{
+    height: 200px;
+    display: flex;
+    margin-top: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 24px;
+
+}
+.geolocation {
+    margin-left: 27px;
+    display: flex;
+    height: 46px;
+    margin-right: 27px;
+    font-size: 20px;
     align-items: center;
 }
-.browser > div:hover {
-    filter:brightness(150%);
-}
-.browser > div > a {
-    align-items: center;
-    display: flex;
-    height: 32px;
-}
-.browser > div > div {
-    display: flex;
-    border: 1px solid #000;
-    width: 1019px;
-    height: 400px;
+[class$="__title"]{
+
 }

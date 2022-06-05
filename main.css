@@ -287,12 +287,12 @@ li {
     top: -32px;
    }
 ul {
-margin-left: 0; /* Отступ слева в браузере IE и Opera */
-padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
-padding-bottom: 0;
-height: 0;
-width: 0;
-}
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    padding-bottom: 0;
+    height: 0;
+    width: 0;
+    }
 li ~ li {
     border-top: 1px solid #000;
 }
