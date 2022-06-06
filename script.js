@@ -139,3 +139,4 @@ chestClickMetric.innerHTML = chestClickMetricStart + " до сундука";
 // chest.onclick = function chestIsOpen() {
 
 // }
+// 14. запуск всего по ама гвест
