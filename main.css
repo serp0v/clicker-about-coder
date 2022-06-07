@@ -34,23 +34,10 @@ body {
 .preOpen {
     display: block;
 }
-/* .preClose {
-    display: none;
-} */
 .preCloseAnimation {
     animation: preHider 1s linear ;
 }
-/* .contentWrapAnimation { */
-    /* animation: preClick 5s linear ; */
-    /* background-color: #191551; */
-    /* background: linear-gradient(#191551, #87ceeb); */
-    /* border: 1px solid black; */
-/* } */
 /*////////////////////////////////////////////////////////////////////////////////////// header */
-/* .header-border {
-    border-bottom: 1px solid #000;
-
-} */
 .header-wrap {
     max-width: 1200px;
     margin: 0 auto;
@@ -93,7 +80,7 @@ p > .logo{
 }
 a {
     text-decoration: none;
-    color:rgb(255, 255, 255);
+    color:rgb(196, 48, 48);
 }
 /* content */
 .content-wrap {
@@ -101,7 +88,6 @@ a {
     height: 704px;
     border-radius: 18px;
     margin: 0 auto;
-    /* background-color: rgb(76, 77, 82); */
 }
 .margincont {
     max-width: 1146px;
@@ -123,7 +109,6 @@ a {
     display: none;
 }
 .accordionOpen {
-    /* flex: 1 1 auto; */
     height: 70px;
     width: 70px;
     border-radius: 18px;
@@ -133,7 +118,6 @@ a {
     background-color: #fff;
 }
 #mainbar {
-    /* flex: 1 1 auto; */
     border: 1px solid rgb(0, 0, 0);
     background-color: #fff;
     height: 70px;
@@ -144,12 +128,10 @@ a {
     display: block;
 }
 .mainbarOpen {
-    /* animation: mainbarisOpen 0.1s linear; */
     top:-20%;
     overflow: hidden;
 }
 .mainbarClose {
-    /* animation: mainbarisClose 0.12s linear; */
     top:34.5%;
 }
 /* ///////////////////////////////////////////////////////////вынести селекторы для шопа и навбара, суперсхожи/////////////////////////////////////////////////// */
@@ -168,7 +150,6 @@ a {
     display: none;
 }
 .shopOpen {
-    /* flex: 1 1 auto; */
     height: 70px;
     width: 70px;
     border-radius: 18px;
@@ -189,12 +170,10 @@ a {
     display: block;
 }
 .mainbarShopOpen {
-    /* animation: mainbarisOpen 0.1s linear; */
     top:-20%;
     overflow: hidden;
 }
 .mainbarShopClose {
-    /* animation: mainbarisClose 0.12s linear; */
     top:34.5%;
 }
 
@@ -223,8 +202,6 @@ a:hover {
 .value__item__cont {
     height: 46px;
     display: flex;
-    /* margin: 7px 10px 7px 10px; */
-    /* justify-content: center; */
     float: right;
     position: relative;
     top: 10%;
@@ -243,17 +220,17 @@ a:hover {
     margin-bottom: 13px;
     margin-left: 10px;
 }
-/* .value__icon {
-    height: 22px;
-    background-color: rgb(116, 116, 116);
-    width: 22px;
-} */
 .coin {
     font-size: 18px;
     color: rgb(255, 255, 255);
     display: flex;
     text-align: right;
 }
+/* .value__icon {
+    height: 22px;
+    background-color: rgb(116, 116, 116);
+    width: 22px;
+} */
 /* .plus__icon {
     height: 22px;
     background-color: rgb(106, 54, 54);
@@ -301,52 +278,13 @@ a:hover {
 .clickZoneOff {
     display: none;
 }
-/* .shopOpen {
-    width: 170px;
-    height: 500px;
-    border-left: 1px solid #000;
-    background-color: rgb(90, 61, 61);
-    display: flex;
-    float: right;
-    overflow: hidden;
-} */
-/* .shopClose {
-    display: none;
-}
-.boost__item {
-    height: 50px;
-    width: 170px;
-    background-color: rgb(176, 52, 52);
-}
-.boost__item:hover {
-    filter: brightness(150%);
-}
-li {
-    list-style-type: none;
-    margin-top: 0;
-    display: flex;
-    margin-right: 0;
-    justify-content: end;
-    align-items: start;
-    position: relative;
-    top: -32px;
-   }
-ul {
-    margin-left: 0; 
-    padding-left: 0;
-    padding-bottom: 0;
-    height: 0;
-    width: 0;
-    }
-li ~ li {
-    border-top: 1px solid #000;
-} */
 /*///////////////////////////////////////////////////////////////////////////////////metrics*/
 .metrics {
     height: 110px;
     border: 1px solid #000;
     max-width: 100%;
     margin: 0 auto;
+    border-radius: 18px;
     /* background-color: rgb(0, 110, 255); */
     background-color: #fff;
     overflow: hidden;
@@ -381,12 +319,10 @@ li ~ li {
 }
 .metric__body {
     width: 170px;
-    /* border-left: 1px solid #000; */
 }
 .metric__cont {
     padding-top: 19px;
     padding-bottom: 13px;
-    /* background-color: rgb(0, 68, 157); */
     background-color: #fff;
 }
 .metric__item {
@@ -405,20 +341,16 @@ li ~ li {
 .metric__title {
     width: 170px;
     justify-content: center;
-    /* background-color: rgb(0, 68, 157); */
     background-color: #fff;
     border-left: 1px solid #000;
 }
 .place {
     width: 260px;
-    /* border-left: 1px solid #000; */
-    /* background-color: rgb(0, 110, 255); */
     background-color: #fff;
 }
 .place__title {
     justify-content: center;
     width: 170px;
-    /* background-color: rgb(0, 110, 255); */
     background-color: #fff;
 }
 .place__item {
@@ -433,7 +365,6 @@ li ~ li {
 }
 .powerNplace {
     border: 1px solid black;
-    /* background-color: rgb(74, 72, 72); */
     background-color: #fff;
 }
 .title__ {
