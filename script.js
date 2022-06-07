@@ -115,6 +115,7 @@ firstShopItem.onclick = function firstShopItemClick() {
     coinCount = coinCount - firstShopItemCost;     // логика отнимания валюты при нажатии на покупку
     goldCell.innerHTML = coinCount;
     // логика увеличения цены в магазине (каждый раз увеличение в 1.07-1.15 раза и округление)
+    firstShopItemCost = Math.ceil(firstShopItemCost * 1.15);
 }
 
 // логика добавления валюты каждую секунду в размере счетчика добычи в секунду
