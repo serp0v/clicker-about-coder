@@ -3,6 +3,7 @@ body {
     user-select:none;
     text-align: center;
     justify-content: center;
+    overflow:  hidden;
 }
 .mainwrapper {
     margin: 0 auto;
@@ -10,7 +11,6 @@ body {
     align-items: center;
     overflow: hidden;
     position: relative;
-    top: 4vh;
 }
 [class$="-wrap"]{
     font-family: 'Koulen';
@@ -39,18 +39,10 @@ body {
 }
 /*////////////////////////////////////////////////////////////////////////////////////// header */
 .header-wrap {
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 42px;
-}
-.headercont {
-    border-radius: 11px;
-    border: 1px solid #000;
-    background-color: #fff;
-    max-width: 952px;
-    padding: 6px 0 5px 0;
-    margin: 0 auto;
-    height:42px;
+    width: calc(100% - 75px);
+    float: right;
+    height: 60px;
+    background-color: #212121;
 }
 .icon {
     width: 30px;
@@ -65,22 +57,21 @@ body {
     float: right;
 }
 .logo {
-    flex-wrap: nowrap;
     float: left;
     display: flex;
-    align-items: center;
-    margin-top: 7px;
     font-family: 'Koulen';
     font-size: 32px;
-    /* border: 1px solid rgb(255, 255, 255); */
-}
-p > .logo{
-    align-items: center;
-    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 60px;
 }
 a {
     text-decoration: none;
     color:rgb(196, 48, 48);
+    filter: brightness(130%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* content */
 .content-wrap {
@@ -90,7 +81,7 @@ a {
     margin: 0 auto;
 }
 .margincont {
-    max-width: 1146px;
+    max-width: 1200px;
     height: 704px;
     position: relative;
     margin: 0 auto;
@@ -159,7 +150,6 @@ a {
     background-color: #fff;
 }
 #shop {
-    /* flex: 1 1 auto; */
     border: 1px solid rgb(0, 0, 0);
     background-color: #fff;
     height: 70px;
@@ -189,36 +179,52 @@ nav {
 a:hover {
     filter: brightness(130%);
 }
+/*  */
 .contentcont {
-    max-width: 950px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////nav */
+.leftNavigation {
+    background-color: #212121;
+    /* background-color: #fff; */
+    height: 100vh;
+    width: 75px;
+    display: flex;
+    float: left;
 }
 /*////////////////////////////////////////////////////////////////////////////////////values*/
 .values {
     height: 60px;
     border-radius: 18px;
     max-width: 100%;
+    /* border: 1px solid rgb(255, 255, 255); */
 }
-.value__item__cont {
+/* .value__item__cont {
     height: 46px;
     display: flex;
     float: right;
     position: relative;
     top: 10%;
-}
-.value__item__cont > div {
-    background-color:rgb(71, 71, 71);
-    border: 1px solid rgb(255, 255, 255);
+} */
+.valuecont {
+    display: flex;
+    margin: 0 auto;
+    width: 268px;
 }
 .value__item {
-    width: 104px;
-    height: 22px;
+    width: 124px;
+    height: 30px;
     display: flex;
     float: right;
-    background-color: rgb(255, 255, 255);
-    margin-top: 13px;
-    margin-bottom: 13px;
-    margin-left: 10px;
+    /* flex-direction: row; */
+    /* background-color: rgb(255, 255, 255); */
+    background-color: #818181;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    /* border: 1px solid #000; */
 }
 .coin {
     font-size: 18px;
@@ -226,46 +232,24 @@ a:hover {
     display: flex;
     text-align: right;
 }
-/* .value__icon {
-    height: 22px;
-    background-color: rgb(116, 116, 116);
-    width: 22px;
-} */
-/* .plus__icon {
-    height: 22px;
-    background-color: rgb(106, 54, 54);
-    width: 22px;
-    position: relative;
-    display: flex;
-    left: 50px;
-} */
 .avatar {
-    height: 30px;
-    width: 30px;
+    height: 34px;
+    width: 34px;
     display: flex;
     float: right;
-    background-color: rgb(255, 255, 255);
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 10px;
+    background-color: #818181;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-right: 45px;
     border-radius: 50%;
-}
-.avatarArrow {
-    float: right;
-    height: 16px;
-    width: 16px;
-    background-color: rgb(255, 255, 255);
-    margin-left: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 /*//////////////////////////////////////////////////////////////////////////////////gameplay*/
 .gameplay {
     height: 502px;
-    border: 1px solid rgb(0, 0, 0);
+    /* border: 1px solid rgb(0, 0, 0); */
     margin-bottom: 15px;
-    background-color: #fff;
-    border-radius: 18px;
+    background-color: rgb(92, 41, 41);
+    /* border-radius: 18px; */
 }
 .clickZone {
     width: 170px;
@@ -285,7 +269,6 @@ a:hover {
     max-width: 100%;
     margin: 0 auto;
     border-radius: 18px;
-    /* background-color: rgb(0, 110, 255); */
     background-color: #fff;
     overflow: hidden;
 }
@@ -297,7 +280,6 @@ a:hover {
 .bonusChest {
     width: 170px;
     border-left: 1px solid #000;
-    /* background-color: rgb(72, 0, 255); */
     background-color: #fff;
 }
 .bonusChest__item {
@@ -331,7 +313,6 @@ a:hover {
     display: flex;
     float: left;
     background-color: rgb(75, 75, 75);
-    /* background-color: #fff; */
     margin-bottom: 10px;
     font-weight: normal;
     font-size: 20px;
