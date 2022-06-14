@@ -1,31 +1,84 @@
 .profile {
-    height: 800px;
+    /* height: 780px; */
+    height: 100vh;
     width: 380px;
     border: 1px solid #000;
     display: flex;
     margin: 0 auto;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     background-color:rgb(26, 27, 21);
     flex-wrap: wrap;
     flex-direction: column;
     position: absolute;
-    top: 7%;
-    left: 33%;
+    /* top: 7%; */
+    /* left: 33%; */
+    /* bottom: 0; */
+    top: 0;
 }
+
 .profile > div{
-    border: 1px solid #000;
+    /* border: 1px solid #00010 */
+    font-family: 'Koulen';
+    /* font-size: 32px; */
 }
+.profileTitleAndClose {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profileTitleAndCloseContainer {
+    width: 360px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.closeProfile {
+}
+.profileTitle {
+    color: aliceblue;
+    margin-left: 17px;
+    font-family: 'Koulen';
+    font-size: 32px;
+}
+
+
+
+
 .progress {
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     border: 10px solid #000;
     border-radius: 100%;
     /* background-color: rgb(65, 15, 215); */
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: rgb(168, 166, 166);
+    /* margin-left: -15px;
+    margin-top: -15px; */
+    margin-left: -4px;
+    margin-top: -4px;
     display: flex;
+    position: absolute;
+}
+.blueProgress {
+    height: 120px;
+    width: 120px;
+    border: 15px solid rgb(104, 0, 250);
+    border-radius: 100%;
+    /* background-color: rgb(65, 15, 215); */
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+.levelcount {
+    color: aliceblue;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    margin: auto auto;
 }
 .nickname {
     height: 50px;
@@ -36,7 +89,6 @@
     margin: 0 auto;
     display: flex;
     margin-top: 20px;
-    background-color: rgb(168, 166, 166);
 }
 .levelexp {
     height: 20px;
@@ -44,11 +96,10 @@
     margin: 0 auto;
     display: flex;
     margin-top: 60px;
-    background-color: rgb(168, 166, 166);
 }
 .nickAndClick {
     display: flex;
-    height: 120px;
+    height: 140px;
     width: 100%;
     /* border: 1px solid #000; */
 }
@@ -67,7 +118,6 @@
     /* margin-right: 23px; */
     border: 5px solid #000;
     display: flex;
-    background-color: rgb(168, 166, 166);
 }
 .id {
     height: 50px;
@@ -75,7 +125,6 @@
     border: 5px solid #000;
     /* background-color: rgb(65, 15, 215); */
     margin-left: 10px;
-    background-color: rgb(168, 166, 166);
     display: flex;
     float: left;
 }
