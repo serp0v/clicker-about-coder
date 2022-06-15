@@ -1,17 +1,3 @@
-body {
-    background-color:rgb(26, 27, 21);
-    user-select:none;
-    text-align: center;
-    justify-content: center;
-    overflow:  hidden;
-}
-.mainwrapper {
-    margin: 0 auto;
-    /* padding-bottom: 4vh; */
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-}
 [class$="-wrap"]{
     font-family: 'Koulen';
     font-size: 32px;
@@ -20,41 +6,27 @@ body {
     font-family: 'Koulen';
     font-size: 32px;
 }
-/*/////////////////////////////////////////////////////////////////////////////////////////// pre */
-.pre {
-    text-align: center;
-    position: absolute;
-    top:37%;
-    right: 44%;
+body {
+    background-color:rgb(26, 27, 21);
+    user-select:none;
+    overflow:  hidden;
 }
-.welcome {
-    color: black;
-    font-weight: bold;
+.mainwrapper {
+    margin: 0 auto;
+    /* padding-bottom: 4vh; */
+    overflow: hidden;
 }
-.preOpen {
-    display: block;
-}
-.preCloseAnimation {
-    animation: preHider 1s linear ;
-}
-/*////////////////////////////////////////////////////////////////////////////////////// header */
 .header-wrap {
-    width: calc(100% - 75px);
+    /* width: calc(100% - 75px); */
+    width: 100%;
     float: right;
     height: 60px;
     background-color: #212121;
 }
-.icon {
-    width: 30px;
-    height: 30px;
+.values {
+    height: 60px;
     border-radius: 18px;
-    border: 1px solid black;
-    background-color:rgb(26, 27, 21);
-    display: flex;
-    flex-direction: row;
-    margin-left: 6px;
-    flex-wrap: nowrap;
-    float: right;
+    max-width: 100%;
 }
 .logo {
     float: left;
@@ -64,6 +36,7 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     height: 60px;
+    margin-left: 25px;
 }
 a {
     text-decoration: none;
@@ -71,166 +44,7 @@ a {
     filter: brightness(130%);
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-/* content */
-.content-wrap {
-    max-width: 1200px;
-    height: 704px;
-    border-radius: 18px;
-    margin: 0 auto;
-}
-.margincont {
-    max-width: 1200px;
-    height: 704px;
-    position: relative;
-    margin: 0 auto;
-}
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.navbar-grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70px;
-    height: 60%;
-    position: absolute;
-    bottom:18.6%;
-    margin-right: 27px;
-}
-.accordionClose {
-    display: none;
-}
-.accordionOpen {
-    height: 70px;
-    width: 70px;
-    border-radius: 18px;
-    display: block;
-    margin-bottom: 9px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: #fff;
-}
-#mainbar {
-    border: 1px solid rgb(0, 0, 0);
-    background-color: #fff;
-    height: 70px;
-    width: 70px;
-    border-radius: 18px;
-    margin-bottom: 9px;
-    position: absolute;
-    display: block;
-}
-.mainbarOpen {
-    top:-20%;
-    overflow: hidden;
-}
-.mainbarClose {
-    top:34.5%;
-}
-/* ///////////////////////////////////////////////////////////вынести селекторы для шопа и навбара, суперсхожи/////////////////////////////////////////////////// */
-.shop-grid {
-    display: flex;
-    flex-wrap: wrap;
-    right: 0;
-    width: 70px;
-    height: 60%;
-    position: absolute;
-    bottom:18.6%;
-    margin-left: 27px;
-    margin-right: 1px;
-}
-.shopClose {
-    display: none;
-}
-.shopOpen {
-    height: 70px;
-    width: 70px;
-    border-radius: 18px;
-    display: block;
-    margin-bottom: 9px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: #fff;
-}
-#shop {
-    border: 1px solid rgb(0, 0, 0);
-    background-color: #fff;
-    height: 70px;
-    width: 70px;
-    border-radius: 18px;
-    margin-bottom: 9px;
-    position: absolute;
-    display: block;
-}
-.mainbarShopOpen {
-    top:-20%;
-    overflow: hidden;
-}
-.mainbarShopClose {
-    top:34.5%;
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////.............. */
-nav {
-    margin-left: 1px;
-}
-.menu {
-    display: block;
-    margin-left: -2px;
-    margin-bottom: -5px;
-}
-a:hover {
-    filter: brightness(130%);
-}
-/*  */
-.contentcont {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-/* ///////////////////////////////////////////////////////////////////////////////////////nav */
-.leftNavigation {
-    background-color: #212121;
-    /* background-color: #fff; */
-    height: 100vh;
-    width: 75px;
-    display: flex;
-    float: left;
-}
-/*////////////////////////////////////////////////////////////////////////////////////values*/
-.values {
-    height: 60px;
-    border-radius: 18px;
-    max-width: 100%;
-    /* border: 1px solid rgb(255, 255, 255); */
-}
-/* .value__item__cont {
-    height: 46px;
-    display: flex;
-    float: right;
-    position: relative;
-    top: 10%;
-} */
-.valuecont {
-    display: flex;
-    margin: 0 auto;
-    width: 268px;
-}
-.value__item {
-    width: 124px;
-    height: 30px;
-    display: flex;
-    float: right;
-    /* flex-direction: row; */
-    /* background-color: rgb(255, 255, 255); */
-    background-color: #818181;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 10px;
-    border-radius: 10px;
-    /* border: 1px solid #000; */
-}
-.coin {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    text-align: right;
+    /* justify-content: center; */
 }
 .avatar {
     height: 34px;
@@ -243,145 +57,44 @@ a:hover {
     margin-right: 45px;
     border-radius: 50%;
 }
-/*//////////////////////////////////////////////////////////////////////////////////gameplay*/
-.gameplay {
-    height: 502px;
-    /* border: 1px solid rgb(0, 0, 0); */
-    margin-bottom: 15px;
-    background-color: rgb(92, 41, 41);
-    /* border-radius: 18px; */
-}
-.clickZone {
-    width: 170px;
-    height: 500px;
-    border-right: 1px solid #000;
+.leftNavigation {
+    background-color: #212121;
+    /* background-color: #fff; */
+    height: 100vh;
+    width: 75px;
     display: flex;
     float: left;
-    background-color: rgb(194, 194, 194);
 }
-.clickZoneOff {
-    display: none;
+.leftNavigationContainer {
+    height: 100vh;
+    width: 24px;
+    display: flex;
+    margin: 17px auto;
 }
-/*///////////////////////////////////////////////////////////////////////////////////metrics*/
-.metrics {
-    height: 110px;
-    border: 1px solid #000;
-    max-width: 100%;
+#burger {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    float: left;
+    background-color: #212121;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    margin-left: 25px;
+    
+}
+/* //////////////////////////gameplay*/
+.gameplayCont {
+    display: flex;
     margin: 0 auto;
-    border-radius: 18px;
-    background-color: #fff;
-    overflow: hidden;
-}
-.metrics > div{
-    height: 110px;
-    display: flex;
-    float: right;
-}
-.bonusChest {
-    width: 170px;
-    border-left: 1px solid #000;
-    background-color: #fff;
-}
-.bonusChest__item {
-    height: 70px;
-    width: 90px;
-    border-radius: 18px;
-    display: block;
-    margin-bottom: 20px;
-    border: 1px solid rgb(0, 0, 0);
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: center;
-    justify-content: center;
-}
-.chestClickMetric {
-    font-size: 18px;
-    display: flex;
-}
-.metric__body {
-    width: 170px;
-}
-.metric__cont {
-    padding-top: 19px;
-    padding-bottom: 13px;
-    background-color: #fff;
-}
-.metric__item {
-    width: 150px;
-    height: 30px;
-    display: flex;
-    float: left;
-    background-color: rgb(75, 75, 75);
-    margin-bottom: 10px;
-    font-weight: normal;
-    font-size: 20px;
-    justify-content: end;
-    padding-right: 5px;
-}
-.metric__title {
-    width: 170px;
-    justify-content: center;
-    background-color: #fff;
-    border-left: 1px solid #000;
-}
-.place {
-    width: 260px;
-    background-color: #fff;
-}
-.place__title {
-    justify-content: center;
-    width: 170px;
-    background-color: #fff;
-}
-.place__item {
-    height: 90px;
-    margin-top: 10px;
-    width: 90px;
-    display: flex;
-    float: right;
-    margin-left: 10px;
+    height: 704px;
+    width: 1100px;
     border: 1px solid #000;
-    margin-bottom: 10px;
+    float: right;
 }
-.powerNplace {
-    border: 1px solid black;
-    background-color: #fff;
-}
-.title__ {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-/* ///////////////////////////////////////////////////////////////////////////////@keyframes*/
-@keyframes preClick {
-    0% {
-        opacity: 0;
-    }/* .contentWrapAnimation */
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes preHider {
-    0% {
-        opacity: 1;
-     }/* .preCloseAnimation */
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes mainbarisOpen {
-    0%{
-        top: 34.5%;
-    }/* .mainbarOpen */
-    100% {
-        top: -20%;
-    }
-}
-@keyframes mainbarisClose {
-    0%{
-        top: -20%;
-    }/* .mainbarClose */
-    100% {
-        top: 34.5%;
-    }
+.gameplay {
+    height: 300px;
+    width: 300px;
+    border: 1px solid #000;
+    display: flex;
+    margin: 0 auto;
 }
