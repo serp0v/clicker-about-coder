@@ -65,7 +65,6 @@ cZo.onclick = function shopModeSwitcher() {
 }
 
 // логика +1 за клик
-
 // достаю ячейку где будет отображаться количество золота
 // обозначаю доп.переменную чтобы дать намбер ячейке
 // вписываю 0 в ячейку, чтобы далее проводить с ним операции
@@ -82,8 +81,9 @@ clickZone.onclick = function clickZoneClick() {
     goldCell.innerHTML = coinCount;
     chestClickMetricStart = chestClickMetricStart - 1;
     chestClickMetric.innerHTML = chestClickMetricStart + " до сундука";
-    let chestMetricChecker = (chestClickMetricStart == 0) ? chest.style.backgroundColor = "#fff" : console.log("рано!");
+    let chestMetricChecker = (chestClickMetricStart == -1) ? chestClickMetric.innerHTML = chestClickMetricStart + 5 : console.log("рано!");
 }
+// chest.style.backgroundColor = "yellow"
 
 // логика увеличения счетчика добычи в секунду
 
@@ -127,7 +127,6 @@ let goldImpact = setInterval(function goldImpacter(){
 },1000);
 
 // сундук - каждое опред кол-во кликов доступен прикол из сундука
-
 // метрик кликов до сундука
 const chest = document.getElementById('chest');
 
@@ -135,10 +134,13 @@ const chestClickMetric = document.getElementById('chestClickMetric');
 
 let chestClickMetricStart = 5;
 
-chestClickMetric.innerHTML = chestClickMetricStart + " до сундука";
+// let chestMetricReset = (chestClickMetricStart == 0) ? chestClickMetricStart + 5 : console.log("message");
+
+// chestClickMetric.innerHTML = chestClickMetricStart + " до сундука";
 
 // открывание менюшки дропа при "раннем клике"(досрочном) на сундук
 // chest.onclick = function chestIsOpen() {
 
 // }
 // 14. запуск всего по ама гвест
+chest.innerHTML = chestClickMetricStart + " до сундука";
